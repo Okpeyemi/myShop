@@ -1,0 +1,90 @@
+.navbar {
+  display: flex;
+  padding: 2rem 4rem;
+  align-items: center;
+}
+
+.navbar .in_navbar {
+  flex: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .in_navbar .brand {
+  margin-right: 2rem;
+  font-size: 25px;
+}
+
+.navbar .in_navbar .nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar .in_navbar .nav p {
+  margin: 0 1rem;
+  cursor: pointer;
+  justify-content: flex-end;
+}
+
+.navbar .sign {
+  flex: 1;
+  margin: 0 2rem;
+  display: flex;
+  align-items: end;
+  justify-content: flex-end;
+}
+
+.navbar .sign a {
+  padding: 1rem 2rem;
+  background-color: #0aa354;
+  color: white;
+  border-radius: 10px;
+}
+
+.navbar .sign a:hover {
+  background-color: #078b47;
+}
+
+.navbar .menu {
+  display: none;
+}
+
+.navbar .menu .menu-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  text-align: end;
+  position: absolute;
+  top: 80px;
+  right: 0;
+  background-color: #0aa354;
+  color: white;
+  padding: 2rem;
+  margin-top: 1rem;
+  min-width: 210px;
+  border-radius: 5px;
+  box-shadow: 0 0 5 rgba(0, 0, 0, 0.2);
+}
+
+.navbar .menu .menu-list p,
+.navbar .menu .menu-list-sign {
+  margin: 1rem 0;
+}
+
+@media screen and (max-width: 1050px) {
+  .navbar .in_navbar .nav {
+    display: none;
+  }
+
+  .navbar .menu {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .navbar .sign {
+    display: none;
+  }
+}
