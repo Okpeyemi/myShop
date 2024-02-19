@@ -1,0 +1,53 @@
+.services {
+  display: flex;
+  flex-direction: column;
+}
+
+.services .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services .text h1 {
+  margin: 1rem 0;
+  font-weight: 700;
+}
+
+.services .text p {
+  margin: 1rem 0;
+  max-width: 700px;
+}
+
+.services .service {
+  display: grid;
+  width: 90%;
+  margin: 2rem auto;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media screen and (max-width: 1050px) {
+  .services .service {
+    justify-items: center;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 815px) {
+  .services .text p {
+    margin: 1rem 0;
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .services .text p {
+    text-align: center;
+    margin: 1rem 0;
+    max-width: 400px;
+  }
+
+  .services .service {
+    width: 100%;
+  }
+}

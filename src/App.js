@@ -13,9 +13,10 @@ import {
 
 const App = () => {
   return (
-    <div className="header">
+    <div>
       <Header />
       <Services />
+      <About />
     </div>
   );
 };
