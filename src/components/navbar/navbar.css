@@ -50,6 +50,10 @@
   display: none;
 }
 
+.navbar .menu i {
+  cursor: pointer;
+}
+
 .navbar .menu .menu-list {
   display: flex;
   justify-content: flex-end;
