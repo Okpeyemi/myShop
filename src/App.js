@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.css";
 
-import { Hero, Navbar, Prop, Service } from "./components";
 import {
   About,
   Footer,
@@ -17,6 +16,9 @@ const App = () => {
       <Header />
       <Services />
       <About />
+      <Work />
+      <WorkWithUs />
+      <Footer />
     </div>
   );
 };

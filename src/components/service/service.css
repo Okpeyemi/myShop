@@ -10,8 +10,8 @@
 .in_service:hover {
   cursor: pointer;
   border-radius: 5px;
-  box-shadow: 0 0 15px 1px;
-  background-color: white;
+  box-shadow: 0 0 5px 1px;
+  background-color: #ffffff69;
 }
 
 .in_service i {
@@ -20,7 +20,7 @@
   margin: 1rem;
   padding: 12px 15px;
   border-radius: 100%;
-  box-shadow: 0 0 5px 0;
+  box-shadow: 0 0 3px 1px;
 }
 
 .in_service .serv {

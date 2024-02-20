@@ -1,19 +1,7 @@
 import React, { useState } from "react";
 import "./navbar.css";
 
-const Menu = () => (
-  <>
-    <p>
-      <a href="#Services">Services</a>
-    </p>
-    <p>
-      <a href="#Work">Work</a>
-    </p>
-    <p>
-      <a href="#AbourUs">Abour Us</a>
-    </p>
-  </>
-);
+import Menu from "../Menu";
 
 const Navbar = () => {
   const [toogleMenu, setToogleMenu] = useState(false);

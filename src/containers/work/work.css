@@ -1,0 +1,71 @@
+.work {
+  margin: 1rem 2rem;
+  padding: 1rem 2rem;
+}
+
+.work .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.work .text h1 {
+  font-weight: 700;
+}
+
+.work .text p {
+  width: 700px;
+}
+
+.work .prop {
+  display: grid;
+  margin: 5rem;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+
+@media screen and (max-width: 1500px) {
+  .work {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .work .prop {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .work .prop {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 815px) {
+  .work .text p {
+    margin: 1rem;
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .work {
+    margin: 0;
+    padding: 0;
+  }
+
+  .work .prop {
+    margin: 1rem;
+  }
+  .work .text p {
+    text-align: center;
+    margin: 1rem 0;
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .work .text p {
+    max-width: 300px;
+  }
+}
